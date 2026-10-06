@@ -1,0 +1,32 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#07111f;color:#e8eef7;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.navbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 7%;background:rgba(7,17,31,.88);backdrop-filter:blur(14px);border-bottom:1px solid #1c2b40}
+.logo{font-size:1.55rem;font-weight:900;letter-spacing:-1px}.logo span,.hero h1 span{color:#62d8ff}
+.navbar nav{display:flex;gap:22px}.navbar nav a{font-size:.88rem;color:#b8c5d6}.navbar nav a:hover{color:#62d8ff}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
+.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:50px;padding:80px 7%;background:radial-gradient(circle at 80% 35%,#123d57 0,transparent 28%),linear-gradient(180deg,#07111f,#091524)}
+.eyebrow{color:#62d8ff;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;margin-bottom:10px}
+.hero h1{font-size:clamp(3rem,7vw,6.2rem);line-height:1.02;letter-spacing:-4px;margin:10px 0 22px}
+.hero-text{max-width:700px;color:#b8c5d6;font-size:1.12rem}
+.buttons{display:flex;gap:14px;margin:30px 0}.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:800;border:1px solid #2c405a;transition:.2s ease}.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:#62d8ff;color:#03101a;border-color:#62d8ff}.btn.secondary{background:#0e1c2d}
+.quick-links{display:flex;flex-wrap:wrap;gap:18px;color:#93a4b8;font-size:.9rem}.quick-links a:hover{color:#62d8ff}
+.hero-card{padding:40px;border:1px solid #263a53;border-radius:24px;background:linear-gradient(145deg,#102237,#0b1726);box-shadow:0 20px 70px rgba(0,0,0,.3);text-align:center}
+.profile-photo-wrapper{display:flex;justify-content:center;margin-bottom:25px}
+.profile-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;display:block;border:4px solid rgba(98,216,255,.3);box-shadow:0 10px 35px rgba(0,0,0,.3)}
+.hero-card h2{font-size:1.45rem}.hero-card p{color:#9eb0c4;margin:5px 0 0}
+.section{padding:100px 7%;scroll-margin-top:72px}.section.alt{background:#0b1726}.section-head{margin-bottom:45px}.section-head h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-1.5px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;font-size:1.12rem;color:#b9c6d5}
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skill-grid article,.project{padding:28px;border:1px solid #263a53;border-radius:16px;background:#0d1b2b}.skill-grid h3{margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{padding:6px 10px;border:1px solid #2a4059;border-radius:99px;color:#b9d3e6;font-size:.8rem;background:#0a1725}
+.timeline{max-width:850px}.timeline-item{display:flex;gap:25px;padding:0 0 38px}.dot{width:13px;height:13px;border-radius:50%;background:#62d8ff;margin-top:9px;flex:none;box-shadow:0 0 0 6px #133044}
+.label{font-size:.78rem;color:#62d8ff;text-transform:uppercase;letter-spacing:1px;font-weight:800}.timeline-item h3{font-size:1.4rem;margin:4px 0}.timeline-item p,.project p{color:#aebdcd}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{position:relative;min-height:270px}.number{color:#62d8ff;font-weight:900;font-size:.8rem}.project h3{font-size:1.45rem;margin:18px 0 3px}.project .label{margin-bottom:15px}.project .tags{margin-top:22px}
+.cert-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cert-list div{padding:18px 20px;border-left:3px solid #62d8ff;background:#0d1b2b;border-radius:8px}
+.contact{text-align:center;background:radial-gradient(circle at 50% 0,#123d57,transparent 45%),#07111f}.contact>p{max-width:650px;margin:0 auto 25px;color:#b9c6d5}.contact-links{display:flex;justify-content:center;gap:14px}
+.social-placeholders{display:flex;justify-content:center;gap:25px;margin-top:30px;color:#62d8ff;font-weight:700}.social-placeholders a:hover{text-decoration:underline}
+footer{text-align:center;padding:25px;color:#72849a;border-top:1px solid #1c2b40;font-size:.85rem}
+@media(max-width:900px){.navbar nav{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;padding:20px 7%;background:#091524;border-bottom:1px solid #1c2b40}.navbar nav.open{display:flex}.menu-btn{display:block}.hero{grid-template-columns:1fr;padding-top:70px}.hero-card{max-width:450px}.about-grid,.skill-grid,.project-grid,.cert-list{grid-template-columns:1fr}}
+@media(max-width:560px){.hero h1{font-size:3.2rem;letter-spacing:-2px}.section{padding:75px 6%}.buttons,.contact-links{flex-direction:column}.btn{text-align:center}.quick-links{flex-direction:column;gap:8px}.hero-card{padding:28px}.profile-photo{width:120px;height:120px}}
